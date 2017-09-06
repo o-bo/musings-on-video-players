@@ -4,11 +4,29 @@ import './App.css';
 
 /* eslint-disable jsx-a11y/media-has-caption */
 class App extends Component {
+  state = {
+    currentProgress: 0,
+    totalProgress: 0,
+  }
+
+  componentDidMount() {
+    this.videoPlayer.ontimeupdate = this.updateTime;
+  }
+
+  updateTime = (prevState) => {
+    this.setState(() => ({
+      currentProgress: this.videoPlayer.currentTime,
+      totalProgress: prevState.totalProgress !== this.videoPlayer.duration
+        ? this.videoPlayer.duration
+        : prevState.totalProgress,
+    }));
+  }
+
   playPause = () => {
-    if (this.video.paused) {
-      this.video.play();
+    if (this.videoPlayer.paused) {
+      this.videoPlayer.play();
     } else {
-      this.video.pause();
+      this.videoPlayer.pause();
     }
   }
 
@@ -22,8 +40,13 @@ class App extends Component {
 
         <div style={{ textAlign: 'center' }}>
           <button onClick={this.playPause}>Play/Pause</button>
+          <progress
+            ref={(bar) => { this.progressBar = bar; }}
+            value={this.state.currentProgress}
+            max={this.state.totalProgress}
+          />
           <video
-            ref={(v) => { this.video = v; }}
+            ref={(player) => { this.videoPlayer = player; }}
             width="640"
             height="480"
             autoPlay
