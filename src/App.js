@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 /* eslint-disable jsx-a11y/media-has-caption */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 class App extends Component {
   state = {
     currentProgress: 0,
@@ -11,6 +12,17 @@ class App extends Component {
 
   componentDidMount() {
     this.videoPlayer.ontimeupdate = this.updateTime;
+  }
+
+  setProgression = (e) => {
+    const progressBoundingRect = this.progressBar.getBoundingClientRect();
+    const {
+      width,
+      left,
+    } = progressBoundingRect;
+    const offset = e.pageX - left;
+    const offsetInSeconds = (offset * this.videoPlayer.duration) / width;
+    this.videoPlayer.currentTime = offsetInSeconds;
   }
 
   updateTime = (prevState) => {
@@ -44,6 +56,7 @@ class App extends Component {
             ref={(bar) => { this.progressBar = bar; }}
             value={this.state.currentProgress}
             max={this.state.totalProgress}
+            onClick={this.setProgression}
           />
           <video
             ref={(player) => { this.videoPlayer = player; }}
@@ -59,6 +72,7 @@ class App extends Component {
     );
   }
 }
+/* eslint-enable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-enable jsx-a11y/media-has-caption */
 
 export default App;
