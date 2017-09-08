@@ -56,7 +56,9 @@ class VideoPlayer extends Component {
           max={this.state.totalProgress}
           onClick={this.setProgression}
         />
-        <span>{this.state.currentProgress}/{this.state.totalProgress}</span>
+        <span>
+          {parseInt(this.state.currentProgress, 10)}/{parseInt(this.state.totalProgress, 10)}
+        </span>
         <video
           ref={(player) => { this.videoPlayer = player; }}
           width="1080"
