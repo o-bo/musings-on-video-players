@@ -29,8 +29,8 @@ class VideoPlayer extends Component {
     this.videoPlayer.currentTime = offsetInSeconds;
   }
 
-  updateTime = (prevState) => {
-    this.setState(() => ({
+  updateTime = () => {
+    this.setState(prevState => ({
       currentProgress: this.videoPlayer.currentTime,
       totalProgress: prevState.totalProgress !== this.videoPlayer.duration
         ? this.videoPlayer.duration
@@ -56,6 +56,7 @@ class VideoPlayer extends Component {
           max={this.state.totalProgress}
           onClick={this.setProgression}
         />
+        <span>{this.state.currentProgress}/{this.state.totalProgress}</span>
         <video
           ref={(player) => { this.videoPlayer = player; }}
           width="1080"
