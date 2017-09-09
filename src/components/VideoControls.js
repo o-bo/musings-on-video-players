@@ -1,7 +1,10 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import { secondsToMinutesInWords } from './utils';
+import {
+  secondsToMinutesInWords,
+  positionInsideProgressInSeconds,
+} from './utils';
 
 import './VideoControls.css';
 
@@ -30,21 +33,21 @@ class VideoControls extends PureComponent {
    */
   changeCurrentTime = (e) => {
     const progressBoundingRect = this.progressBar.getBoundingClientRect();
-    const {
-      width,
-      left,
-    } = progressBoundingRect;
-    const offset = e.pageX - left;
-    const startTime = (offset * this.props.totalProgress) / width;
+    const setBoudingRectForDuration = positionInsideProgressInSeconds(progressBoundingRect);
+    const computeTimeForPosition = setBoudingRectForDuration(this.props.totalProgress);
+    const startTime = computeTimeForPosition(e.pageX);
 
     this.props.onTimeChange(startTime);
   }
 
-  render() {
-    const playPauseIconPath = this.props.isPlaying
-      ? 'M14.016 5.016h3.984v13.969h-3.984v-13.969zM6 18.984v-13.969h3.984v13.969h-3.984z'
-      : 'M8.016 5.016l10.969 6.984-10.969 6.984v-13.969z';
+  /**
+   * Return the correct svg for playPauseIcon according to current props.
+   */
+  playPauseIcon = () => (this.props.isPlaying
+    ? 'M14.016 5.016h3.984v13.969h-3.984v-13.969zM6 18.984v-13.969h3.984v13.969h-3.984z'
+    : 'M8.016 5.016l10.969 6.984-10.969 6.984v-13.969z');
 
+  render() {
     return (
       <div className="video-controls">
         <svg
@@ -54,7 +57,7 @@ class VideoControls extends PureComponent {
           onClick={this.props.playPause}
           style={{ padding: 5 }}
         >
-          <path d={playPauseIconPath} />
+          <path d={this.playPauseIcon()} />
         </svg>
         <span className="video-time">
           {secondsToMinutesInWords(parseInt(this.props.currentProgress, 10))}

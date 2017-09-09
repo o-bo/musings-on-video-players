@@ -85,6 +85,7 @@ class VideoContainer extends Component {
   render() {
     return (
       <div
+        className="video-container"
         style={{
           margin: 10,
           padding: 5,

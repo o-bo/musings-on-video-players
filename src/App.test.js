@@ -1,8 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {
+  shallow,
+  mount,
+} from 'enzyme';
+
 import App from './App';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  shallow(<App />);
+});
+
+it('mounts without crashing', () => {
+  mount(<App />);
+});
+
+it('renders header', () => {
+  const wrapper = shallow(<App />);
+  expect(wrapper.find('.App-header')).toHaveLength(1);
+});
+
+it('renders logo', () => {
+  const wrapper = shallow(<App />);
+  expect(wrapper.find('.App-logo')).toHaveLength(1);
+});
+
+it('renders title', () => {
+  const wrapper = shallow(<App />);
+  expect(wrapper.find('h2')).toHaveLength(1);
 });
