@@ -1,6 +1,6 @@
 import React from 'react';
 
-import VideoPlayer from './components/VideoPlayer';
+import VideoContainer from './components/VideoContainer';
 
 import logo from './logo.svg';
 import './App.css';
@@ -12,7 +12,7 @@ export default () => (
       <h2>Musings on video players with React</h2>
     </div>
 
-    <VideoPlayer
+    <VideoContainer
       src="https://s3-eu-west-1.amazonaws.com/onrewind-test-bucket/big_buck_bunny.mp4"
       type="video/mp4"
       size="medium"
