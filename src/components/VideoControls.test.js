@@ -1,14 +1,17 @@
 import renderer from 'react-test-renderer';
 import React from 'react';
-import { shallow } from 'enzyme';
+import {
+  mount,
+  shallow,
+} from 'enzyme';
 
 import VideoControls from './VideoControls';
 
 const controlsParams = {
   currentProgress: 18,
   totalProgress: 60,
-  playPause: () => true,
-  onTimeChange: () => true,
+  playPause: jest.fn(),
+  onTimeChange: jest.fn(),
   isPlaying: true,
 };
 
@@ -34,4 +37,10 @@ test('VideoControlsTest renders correctly in play', () => {
     <VideoControls {...controlsParams} />,
   ).toJSON();
   expect(tree).toMatchSnapshot();
+});
+
+it('calls onTimeChange when changeCurrentTime is called', () => {
+  const wrapper = mount(<VideoControls {...controlsParams} />);
+  wrapper.instance().changeCurrentTime({ pageX: 200 });
+  expect(wrapper.prop('onTimeChange')).toHaveBeenCalled();
 });
