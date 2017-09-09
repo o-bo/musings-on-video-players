@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React from 'react';
 import {
   shallow,
@@ -29,5 +28,3 @@ it('renders title', () => {
   const wrapper = shallow(<App />);
   expect(wrapper.find('h2')).toHaveLength(1);
 });
-
-/* eslint-enable no-undef */
