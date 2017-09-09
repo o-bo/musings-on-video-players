@@ -1,8 +1,14 @@
 
+.video-controls {
+  display: flex;
+  align-items: center;
+}
+
 progress {
-	width: 70%;
 	-webkit-appearance: none;
 	border: none;
+  margin: 5px;
+  flex: 1;
 }
 
 progress::-webkit-progress-bar {

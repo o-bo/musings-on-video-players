@@ -44,13 +44,15 @@ class VideoControls extends PureComponent {
     const playPauseIconPath = this.props.isPlaying
       ? 'M14.016 5.016h3.984v13.969h-3.984v-13.969zM6 18.984v-13.969h3.984v13.969h-3.984z'
       : 'M8.016 5.016l10.969 6.984-10.969 6.984v-13.969z';
+
     return (
-      <div>
+      <div className="video-controls">
         <svg
           fill="white"
           width={23}
           height={23}
           onClick={this.props.playPause}
+          style={{ padding: 5 }}
         >
           <path d={playPauseIconPath} />
         </svg>
