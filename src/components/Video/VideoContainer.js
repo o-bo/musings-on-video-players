@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import VideoPlayer from './VideoPlayer';
-import VideoControls from './VideoControls';
+import VideoPlayer from './Player/VideoPlayer';
+import VideoControls from './Controls/VideoControls';
 
 /** 3 sizes of players are available */
 const playerSizes = {

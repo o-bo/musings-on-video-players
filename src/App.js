@@ -1,6 +1,6 @@
 import React from 'react';
 
-import VideoContainer from './components/VideoContainer';
+import VideoContainer from './components/Video/VideoContainer';
 
 import logo from './logo.svg';
 import './App.css';
