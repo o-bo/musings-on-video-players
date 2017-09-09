@@ -7,16 +7,16 @@ import VideoControls from './VideoControls';
 /** 3 sizes of players are available */
 const playerSizes = {
   small: {
-    width: 320,
-    height: 240,
+    maxWidth: 320,
+    height: 'auto',
   },
   medium: {
-    width: 640,
-    height: 480,
+    maxWidth: 640,
+    height: 'auto',
   },
   big: {
-    width: 1080,
-    height: 720,
+    maxWidth: 1080,
+    height: 'auto',
   },
 };
 
@@ -87,6 +87,8 @@ class VideoContainer extends Component {
       <div
         style={{
           margin: 10,
+          padding: 5,
+          backgroundColor: '#322c35',
           ...playerSizes[this.props.size],
         }}
       >
@@ -103,6 +105,7 @@ class VideoContainer extends Component {
           totalProgress={this.state.totalProgress}
           playPause={this.playPause}
           onTimeChange={this.onTimeChange}
+          isPlaying={this.state.isPlaying}
         />
       </div>
     );

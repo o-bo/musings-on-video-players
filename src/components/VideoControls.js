@@ -1,6 +1,10 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
+import { secondsToMinutesInWords } from './utils';
+
+import './VideoControls.css';
+
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /**
  * VideosControls displays the play/pause button and the progress bar.
@@ -14,6 +18,7 @@ class VideoControls extends PureComponent {
     totalProgress: PropTypes.number.isRequired,
     playPause: PropTypes.func.isRequired,
     onTimeChange: PropTypes.func.isRequired,
+    isPlaying: PropTypes.bool.isRequired,
   };
 
   /**
@@ -36,17 +41,32 @@ class VideoControls extends PureComponent {
   }
 
   render() {
+    const playPauseIconPath = this.props.isPlaying
+      ? 'M14.016 5.016h3.984v13.969h-3.984v-13.969zM6 18.984v-13.969h3.984v13.969h-3.984z'
+      : 'M8.016 5.016l10.969 6.984-10.969 6.984v-13.969z';
+
     return (
-      <div>
-        <button onClick={this.props.playPause}>Play/Pause</button>
+      <div className="video-controls">
+        <svg
+          fill="white"
+          width={23}
+          height={23}
+          onClick={this.props.playPause}
+          style={{ padding: 5 }}
+        >
+          <path d={playPauseIconPath} />
+        </svg>
+        <span className="video-time">
+          {secondsToMinutesInWords(parseInt(this.props.currentProgress, 10))}
+        </span>
         <progress
           ref={(bar) => { this.progressBar = bar; }}
           value={this.props.currentProgress}
           max={this.props.totalProgress}
           onClick={this.changeCurrentTime}
         />
-        <span>
-          {parseInt(this.props.currentProgress, 10)}/{parseInt(this.props.totalProgress, 10)}
+        <span className="video-time">
+          {secondsToMinutesInWords(parseInt(this.props.totalProgress, 10))}
         </span>
       </div>
     );
