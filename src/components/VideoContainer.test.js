@@ -32,3 +32,29 @@ it('initializes state with totalProgress at 0', () => {
   const wrapper = shallow(<VideoContainer {...videoParams} />);
   expect(wrapper.state().totalProgress).toEqual(0);
 });
+
+it('updates state\'s currentProgress when calling updateTime', () => {
+  const wrapper = shallow(<VideoContainer {...videoParams} />);
+  wrapper.instance().updateTime(2, 10);
+  expect(wrapper.state().currentProgress).toEqual(2);
+});
+
+it('updates state\'s totalProgress when calling updateTime', () => {
+  const wrapper = shallow(<VideoContainer {...videoParams} />);
+  wrapper.instance().updateTime(2, 10);
+  expect(wrapper.state().totalProgress).toEqual(10);
+});
+
+it('updates state\'s startTime when calling onTimeChange', () => {
+  const wrapper = shallow(<VideoContainer {...videoParams} />);
+  wrapper.instance().onTimeChange(20);
+  expect(wrapper.state().startTime).toEqual(20);
+});
+
+it('updates state\'s isPlaying when calling playPause', () => {
+  const wrapper = shallow(<VideoContainer {...videoParams} />);
+  wrapper.instance().playPause();
+  expect(wrapper.state().isPlaying).toBeFalsy();
+  wrapper.instance().playPause();
+  expect(wrapper.state().isPlaying).toBeTruthy();
+});
