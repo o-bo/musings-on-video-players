@@ -2,6 +2,12 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 /* eslint-disable jsx-a11y/media-has-caption */
+/**
+ * VideoPlayer displays the surface where the video should be played.
+ * It delegates actions to the {@link VideoContainer}.
+ *
+ * @extends PureComponent - in order to update only when props change.
+ */
 class VideoPlayer extends PureComponent {
   static propTypes = {
     src: PropTypes.string.isRequired,
@@ -16,6 +22,13 @@ class VideoPlayer extends PureComponent {
     currentTime: 0,
   }
 
+  /**
+   * Specifc React lifecycle method.
+   * Update the player's currentTime position according to the props.
+   * Start or pause the player according to the props.
+   *
+   * @param {object} prevProps - the previous props of the component.
+   */
   componentDidUpdate(prevProps) {
     if (this.props.isPlaying) {
       this.videoPlayer.play();
@@ -27,16 +40,17 @@ class VideoPlayer extends PureComponent {
     }
   }
 
+  /**
+   * Get the new currentTime and duration from the player.
+   * Then it calls the onTimeUpdate method from the props - {@link VideoContainer#onTimeUpdate}.
+   */
   timeUpdate = () => {
     const {
       currentTime,
       duration,
     } = this.videoPlayer;
 
-    this.props.onTimeUpdate({
-      currentTime,
-      duration,
-    });
+    this.props.onTimeUpdate(currentTime, duration);
   }
 
   render() {

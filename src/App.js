@@ -5,6 +5,10 @@ import VideoContainer from './components/VideoContainer';
 import logo from './logo.svg';
 import './App.css';
 
+/**
+ * Functional component rendering the application's logo and title
+ * and an instance of {@link VideoContainer}.
+ */
 export default () => (
   <div className="App">
     <div className="App-header">

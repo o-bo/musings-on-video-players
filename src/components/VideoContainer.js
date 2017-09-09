@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import VideoPlayer from './VideoPlayer';
 import VideoControls from './VideoControls';
 
+/** 3 sizes of players are available */
 const playerSizes = {
   small: {
     width: 320,
@@ -19,6 +20,12 @@ const playerSizes = {
   },
 };
 
+/**
+ * VideoContainer handles actions on controls and manage the state of the component.
+ * It is composed of one instance of {@link VideoPlayer} and one instance of {@link VideoControls}.
+ *
+ * @extends Component
+ */
 class VideoContainer extends Component {
   static propTypes = {
     src: PropTypes.string.isRequired,
@@ -37,16 +44,26 @@ class VideoContainer extends Component {
     totalProgress: 0,
   }
 
+  /**
+   * Update the state with the given startTime.
+   * Used when the user clicks somewhere on the progres bar.
+   *
+   * @param {number} startTime - the time in seconds where the {@link VideoPlayer} should be set.
+   */
   onTimeChange = (startTime) => {
     this.setState(() => ({
       startTime,
     }));
   }
 
-  updateTime = ({
-    currentTime,
-    duration,
-  }) => {
+  /**
+   * Update the state with the current position of the video and the total duration.
+   * Used in order to update the progress bar in {@link VideoControls}.
+   *
+   * @param {number} currentTime - the current time in seconds of the video.
+   * @param {number} duration - the total duration of the video.
+   */
+  updateTime = (currentTime, duration) => {
     this.setState(prevState => ({
       currentProgress: currentTime,
       totalProgress: prevState.totalProgress !== duration
@@ -55,10 +72,13 @@ class VideoContainer extends Component {
     }));
   }
 
+  /**
+   * Update the state with a flag indicating if the {@link VideoPlayer} is currently playing.
+   * Used when the user clicks on the play/pause button in {@link VideoControls}.
+   */
   playPause = () => {
     this.setState(prevState => ({
       isPlaying: !prevState.isPlaying,
-      currentTime: prevState.currentProgress,
     }));
   }
 
