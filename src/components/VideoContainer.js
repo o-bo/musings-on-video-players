@@ -7,15 +7,15 @@ import VideoControls from './VideoControls';
 /** 3 sizes of players are available */
 const playerSizes = {
   small: {
-    width: 320,
+    maxWidth: 320,
     height: 'auto',
   },
   medium: {
-    width: 640,
+    maxWidth: 640,
     height: 'auto',
   },
   big: {
-    width: 1080,
+    maxWidth: 1080,
     height: 'auto',
   },
 };
