@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
+import { elapsedTimeInWords } from './utils';
+
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /**
  * VideosControls displays the play/pause button and the progress bar.
@@ -46,7 +48,7 @@ class VideoControls extends PureComponent {
           onClick={this.changeCurrentTime}
         />
         <span>
-          {parseInt(this.props.currentProgress, 10)}/{parseInt(this.props.totalProgress, 10)}
+          {elapsedTimeInWords(this.props.currentProgress, this.props.totalProgress)}
         </span>
       </div>
     );
