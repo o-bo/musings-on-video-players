@@ -8,15 +8,15 @@ import VideoControls from './VideoControls';
 const playerSizes = {
   small: {
     width: 320,
-    height: 240,
+    height: 'auto',
   },
   medium: {
     width: 640,
-    height: 480,
+    height: 'auto',
   },
   big: {
     width: 1080,
-    height: 720,
+    height: 'auto',
   },
 };
 
@@ -87,6 +87,8 @@ class VideoContainer extends Component {
       <div
         style={{
           margin: 10,
+          padding: 5,
+          backgroundColor: '#322c35',
           ...playerSizes[this.props.size],
         }}
       >

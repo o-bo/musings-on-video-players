@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import { elapsedTimeInWords } from './utils';
+import { secondsToMinutesInWords } from './utils';
+
+import './VideoControls.css';
 
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /**
@@ -41,14 +43,17 @@ class VideoControls extends PureComponent {
     return (
       <div>
         <button onClick={this.props.playPause}>Play/Pause</button>
+        <span className="video-time">
+          {secondsToMinutesInWords(parseInt(this.props.currentProgress, 10))}
+        </span>
         <progress
           ref={(bar) => { this.progressBar = bar; }}
           value={this.props.currentProgress}
           max={this.props.totalProgress}
           onClick={this.changeCurrentTime}
         />
-        <span>
-          {elapsedTimeInWords(this.props.currentProgress, this.props.totalProgress)}
+        <span className="video-time">
+          {secondsToMinutesInWords(parseInt(this.props.totalProgress, 10))}
         </span>
       </div>
     );
