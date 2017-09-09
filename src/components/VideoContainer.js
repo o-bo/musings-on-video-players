@@ -105,6 +105,7 @@ class VideoContainer extends Component {
           totalProgress={this.state.totalProgress}
           playPause={this.playPause}
           onTimeChange={this.onTimeChange}
+          isPlaying={this.state.isPlaying}
         />
       </div>
     );

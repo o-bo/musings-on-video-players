@@ -18,6 +18,7 @@ class VideoControls extends PureComponent {
     totalProgress: PropTypes.number.isRequired,
     playPause: PropTypes.func.isRequired,
     onTimeChange: PropTypes.func.isRequired,
+    isPlaying: PropTypes.bool.isRequired,
   };
 
   /**
@@ -40,9 +41,19 @@ class VideoControls extends PureComponent {
   }
 
   render() {
+    const playPauseIconPath = this.props.isPlaying
+      ? 'M14.016 5.016h3.984v13.969h-3.984v-13.969zM6 18.984v-13.969h3.984v13.969h-3.984z'
+      : 'M8.016 5.016l10.969 6.984-10.969 6.984v-13.969z';
     return (
       <div>
-        <button onClick={this.props.playPause}>Play/Pause</button>
+        <svg
+          fill="white"
+          width={23}
+          height={23}
+          onClick={this.props.playPause}
+        >
+          <path d={playPauseIconPath} />
+        </svg>
         <span className="video-time">
           {secondsToMinutesInWords(parseInt(this.props.currentProgress, 10))}
         </span>
