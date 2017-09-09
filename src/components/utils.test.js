@@ -16,8 +16,8 @@ it('builds 10:11', () => {
 });
 
 it('computes the correct time position inside a rect according to a duration', () => {
-  const insideRect = positionInsideProgressInSeconds({ width: 100, left: 100 });
-  const rectForDuration = insideRect(60);
-  const timeForPosition = rectForDuration(110);
+  const setBoudingRectForDuration = positionInsideProgressInSeconds({ width: 100, left: 100 });
+  const computeTimeForPosition = setBoudingRectForDuration(60);
+  const timeForPosition = computeTimeForPosition(110);
   expect(timeForPosition).toEqual(6);
 });

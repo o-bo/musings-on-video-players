@@ -33,9 +33,9 @@ class VideoControls extends PureComponent {
    */
   changeCurrentTime = (e) => {
     const progressBoundingRect = this.progressBar.getBoundingClientRect();
-    const insideRect = positionInsideProgressInSeconds(progressBoundingRect);
-    const rectForDuration = insideRect(this.props.totalProgress);
-    const startTime = rectForDuration(e.pageX);
+    const setBoudingRectForDuration = positionInsideProgressInSeconds(progressBoundingRect);
+    const computeTimeForPosition = setBoudingRectForDuration(this.props.totalProgress);
+    const startTime = computeTimeForPosition(e.pageX);
 
     this.props.onTimeChange(startTime);
   }
