@@ -1,0 +1,70 @@
+11:09:48.877 INFO - Selenium build info: version: '3.5.3', revision: 'a88d25fe6b'
+11:09:48.878 INFO - Launching a standalone Selenium Server
+2017-09-10 11:09:48.908:INFO::main: Logging initialized @435ms to org.seleniumhq.jetty9.util.log.StdErrLog
+11:09:48.990 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+11:09:49.039 INFO - Driver provider class org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+11:09:49.039 INFO - Driver provider class org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+11:09:49.080 INFO - Using the passthrough mode handler
+2017-09-10 11:09:49.120:INFO:osjs.Server:main: jetty-9.4.5.v20170502
+2017-09-10 11:09:49.153:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@4e9ba398{/,null,STARTING} has uncovered http methods for path: /
+2017-09-10 11:09:49.160:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@4e9ba398{/,null,AVAILABLE}
+2017-09-10 11:09:49.200:INFO:osjs.AbstractConnector:main: Started ServerConnector@3a883ce7{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-09-10 11:09:49.201:INFO:osjs.Server:main: Started @728ms
+11:09:49.201 INFO - Selenium Server is up and running
+2017-09-10 11:09:49.585:INFO:osjshC.ROOT:qtp1586600255-10: org.openqa.selenium.remote.server.WebDriverServlet-6767c1fc: Initialising WebDriverServlet
+11:09:49.629 INFO - Binding default provider to: org.openqa.selenium.chrome.ChromeDriverService
+11:09:49.630 INFO - Found handler: org.openqa.selenium.remote.server.BeginSession@6a83fc97
+11:09:49.633 INFO - /session: Executing POST on /session (handler: BeginSession)
+11:09:49.692 INFO - Capabilities are: Capabilities {acceptSslCerts=true, name=Research On Google Test, browserName=chrome, javascriptEnabled=true, platformName=ANY, platform=ANY, }
+11:09:49.693 INFO - Capabilities {acceptSslCerts=true, name=Research On Google Test, browserName=chrome, javascriptEnabled=true, platformName=ANY, platform=ANY, } matched class org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+11:09:49.695 INFO - Capabilities {acceptSslCerts=true, name=Research On Google Test, browserName=chrome, javascriptEnabled=true, platformName=ANY, platform=ANY, } matched class org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061) on port 34113
+Only local connections are allowed.
+11:09:51.663 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:09:51.664 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing POST on /session/1cb0002de3101742d160164f0eda463c/url (handler: ServicedSession)
+11:09:51.668 INFO - To upstream: {"url":"http://google.com"}
+11:10:06.161 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":null}
+11:10:06.169 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:06.169 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing POST on /session/1cb0002de3101742d160164f0eda463c/elements (handler: ServicedSession)
+11:10:06.171 INFO - To upstream: {"using":"css selector","value":"body"}
+11:10:06.186 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":[{"ELEMENT":"0.33735107224890504-1"}]}
+11:10:06.190 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:06.190 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing GET on /session/1cb0002de3101742d160164f0eda463c/element/0.33735107224890504-1/displayed (handler: ServicedSession)
+11:10:06.204 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":true}
+11:10:06.210 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:06.210 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing POST on /session/1cb0002de3101742d160164f0eda463c/element (handler: ServicedSession)
+11:10:06.212 INFO - To upstream: {"using":"css selector","value":"input[type=text]"}
+11:10:06.226 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":{"ELEMENT":"0.33735107224890504-2"}}
+11:10:06.230 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:06.230 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing POST on /session/1cb0002de3101742d160164f0eda463c/element/0.33735107224890504-2/value (handler: ServicedSession)
+11:10:06.232 INFO - To upstream: {"value":["n","i","g","h","t","w","a","t","c","h"]}
+11:10:06.351 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":null}
+11:10:06.356 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:06.356 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing POST on /session/1cb0002de3101742d160164f0eda463c/elements (handler: ServicedSession)
+11:10:06.359 INFO - To upstream: {"using":"css selector","value":"input[name=btnK]"}
+11:10:06.379 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":[{"ELEMENT":"0.33735107224890504-3"}]}
+11:10:06.383 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:06.384 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing GET on /session/1cb0002de3101742d160164f0eda463c/element/0.33735107224890504-3/displayed (handler: ServicedSession)
+11:10:06.401 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":true}
+11:10:06.408 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:06.409 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing POST on /session/1cb0002de3101742d160164f0eda463c/element (handler: ServicedSession)
+11:10:06.410 INFO - To upstream: {"using":"css selector","value":"input[name=btnK]"}
+11:10:06.436 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":{"ELEMENT":"0.33735107224890504-3"}}
+11:10:06.439 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:06.439 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing POST on /session/1cb0002de3101742d160164f0eda463c/element/0.33735107224890504-3/click (handler: ServicedSession)
+11:10:06.440 INFO - To upstream: 
+11:10:08.268 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":null}
+11:10:09.277 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:09.277 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing POST on /session/1cb0002de3101742d160164f0eda463c/element (handler: ServicedSession)
+11:10:09.279 INFO - To upstream: {"using":"css selector","value":"#main"}
+11:10:09.296 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":{"ELEMENT":"0.632313912435583-1"}}
+11:10:09.299 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:09.300 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing GET on /session/1cb0002de3101742d160164f0eda463c/element/0.632313912435583-1/text (handler: ServicedSession)
+11:10:09.578 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":"TousImagesVidéosActualitésShoppingPlus\nParamètres\nOutils\nEnviron 7 150 000 résultats (0,62 secondes) \n\n\nRappel concernant les règles de confidentialité de Google\nME LE RAPPELER PLUS TARD\nLIRE\nNightwatch.js | Node.js powered End-to-End testing framework\nnightwatchjs.org/\nTraduire cette page\nWrite efficient and straightforward end-to-end tests in Node.js which run against a Selenium/WebDriver server.\nWhat is Nightwatch? · Configuration · Using Nightwatch · Running Tests\nNight Watch - film 2004 - AlloCiné\nwww.allocine.fr › Cinéma › Tous les films › Films Fantastique\nNote : 2,1 - 1 779 votes\nNight Watch est un film réalisé par Aleksandr Bachilo et Timur Bekmambetov avec Konstantin Khabensky, Vladimir Menshov. Synopsis : En 1342, en Russie, ...\nTrailer du film Night Watch - Night Watch Bande-annonce VF - AlloCiné\n▶ 2:16\nwww.allocine.fr › ... › Films Fantastique › Night Watch\n17 juin 2005\nRegardez la bande annonce du film Night Watch (Night Watch Bande-annonce VF). Night Watch, un film de ...\nNight Watch (film, 2004) — Wikipédia\nhttps://fr.wikipedia.org/wiki/Night_Watch_(film,_2004)\nPour plus de détails, voir Fiche technique et Distribution. Night Watch (Ночной дозор (Notchnoï dozor)) est un film russe réalisé par Timour Bekmambetov, sorti ...\nSynopsis · Fiche technique · Production · Autour du film\nIntroduction à Nightwatch, pour des tests d'acceptance ultra rapides ...\nblog.js-republic.com/introduction-a-nightwatch-tests-dacceptance-ultra-rapides/\n10 févr. 2016 - Mais ce n'était pas sans compter sur la communauté qui a créé Nightwatch (non, c'est pas les mêmes que dans Game Of Thrones …) ...\nGitHub - nightwatchjs/nightwatch: Automated testing and continous ...\nhttps://github.com/nightwatchjs/nightwatch\nTraduire cette page\nnightwatch - Automated testing and continous integration framework based on node.js and selenium webdriver.\nImages correspondant à nightwatch\nPlus d'images pour nightwatch\nSignaler des images inappropriées\nHome · nightwatchjs/nightwatch Wiki · GitHub\nhttps://github.com/nightwatchjs/nightwatch/wiki\nTraduire cette page\nWelcome to the Nightwatch.js wiki. Here you can find guides or tutorials regarding specific details of using Nightwatch. Browser specific settings. Chrome Setup ...\nTests Unitaires en JavaScript : Tests end-to-end : Nightwatch.js\nhttps://www.grafikart.fr/formations/javascript-unit-test/end-to-end-tests-nightwatch\nCette automatisation peut se faire gràce à l'outil Selenium qui est très efficace mais pas forcément simple d'utilisation. Nightwatch.js va vous permettre d'écrire ...\nNochnoy dozor (2004) - IMDb\nwww.imdb.com/title/tt0403358/\nTraduire cette page\nNote : 6,5/10 - 48 730 votes\nAction · A fantasy-thriller set in present-day Moscow where the respective forces that control .... Taglines: All That Stands Between Light And Darkness Is The Night Watch.\nRecherches associées à nightwatch\nnight watch js\nnight watch trilogie\nnight watch 2\nnight watch film\nnight watch wiki\nnight watch serie\nnight watch game of thrones\nnightwatch marvel\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nSuivant\nNight Watch\n2004 ‧ Cinéma de fantasy/Thriller ‧ 1h 55m\n2,1/5\nAlloCiné\n6,5/10\nIMDb\nNight Watch est un film russe réalisé par Timour Bekmambetov, sorti en 2004. Il s'agit de l'adaptation du roman homonyme de Sergueï Loukianenko. Wikipédia\nDate de sortie : 28 septembre 2005 (France)\nRéalisateur : Timour Bekmambetov\nD'après l'œuvre originale de : Sergueï Loukianenko\nBudget : 4,2 millions USD\nScénario : Timour Bekmambetov, Laeta Kalogridis\nDistribution\nVoir + de 15 éléments\nConstantin Khabenski\nAnton\nZhanna Friske\nAlice Donnikova\nMaria Mikhaïlovna Porochina\nSvetlana\nRecherches associées\nVoir + de 10 éléments\nDay Watch\n2006\nL'Assistant du vampire\n2009\nAbraham Lincoln, chasseur...\n2012\nCommentaires\nAfficher les résultats pour\nLes Sentinelles de la nuit (Roman de Sergueï Loukianenko)\nDate de publication originale :\nAuteur : Sergueï Loukianenko\nLe Veilleur de nuit (Film (1997))\nDate de sortie initiale : février 1997\nRéalisateur : Ole Bornedal\nDomezain-Berraute - Selon votre adresse Internet - Utiliser la position exacte - En savoir plus\nAide Envoyer des commentaires Confidentialité Conditions"}
+11:10:09.593 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:09.594 INFO - Handler thread for session 1cb0002de3101742d160164f0eda463c (chrome): Executing DELETE on /session/1cb0002de3101742d160164f0eda463c (handler: ServicedSession)
+11:10:09.658 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":null}
+11:10:09.665 INFO - Removing session org.openqa.selenium.remote.server.ServicedSession@6b300d12
+11:10:09.668 INFO - To downstream: {"sessionId":"1cb0002de3101742d160164f0eda463c","status":0,"value":null}
