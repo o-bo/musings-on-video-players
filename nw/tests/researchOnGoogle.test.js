@@ -1,7 +1,7 @@
 module.exports = {
   'Search on google': (browser) => {
     browser
-      .init()
+      .init(browser.globals.googleUrl)
       .page.google().fillInSearchInput()
       .page.google().submit()
       .assert.containsText('#main', browser.globals.movieName)

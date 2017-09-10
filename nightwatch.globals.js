@@ -2,10 +2,12 @@ module.exports = {
   default: { // Settings for default environement
     searchTerm: 'nightwatch',
     movieName: 'Night Watch',
+    googleUrl: 'http://google.com',
   },
   french: { // Settings for french environement
     searchTerm: 'la classe américaine',
     movieName: 'la classe américaine',
+    googleUrl: 'http://google.fr',
   },
 
   // Stop as soon as a test fails

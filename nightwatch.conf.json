@@ -34,11 +34,6 @@
         "acceptSslCerts": true
       }
     },
-    "test-google": {
-      "launch_url": "http://google.com"
-    },
-    "test-google-french": {
-      "launch_url": "http://google.fr"
-    }
+    "french": {}
   }
 }
