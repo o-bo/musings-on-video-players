@@ -51,6 +51,7 @@ class VideoControls extends PureComponent {
     return (
       <div className="video-controls">
         <svg
+          className="play-pause-btn"
           fill="white"
           width={23}
           height={23}
