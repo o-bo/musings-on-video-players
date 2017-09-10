@@ -33,13 +33,8 @@
         "acceptSslCerts": true
       }
     },
-    "firefox" : {
-      "launch_url" : "http://google.fr",
-      "desiredCapabilities": {
-        "browserName": "firefox",
-        "javascriptEnabled": true,
-        "acceptSslCerts": true
-      }
+    "french" : {
+      "launch_url" : "http://google.fr"
     }
   }
 }
