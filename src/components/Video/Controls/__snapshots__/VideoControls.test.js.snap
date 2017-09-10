@@ -5,6 +5,7 @@ exports[`VideoControlsTest renders correctly in pause 1`] = `
   className="video-controls"
 >
   <svg
+    className="play-pause-btn"
     fill="white"
     height={23}
     onClick={[Function]}
@@ -42,6 +43,7 @@ exports[`VideoControlsTest renders correctly in play 1`] = `
   className="video-controls"
 >
   <svg
+    className="play-pause-btn"
     fill="white"
     height={23}
     onClick={[Function]}
