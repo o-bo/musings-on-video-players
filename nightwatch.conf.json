@@ -8,7 +8,7 @@
   },
   "selenium" : {
     "start_process" : true,
-    "server_path" : "./node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-2.50.1.jar",
+    "server_path" : "./node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-3.5.3.jar",
     "log_path" : "nw/logs",
     "host" : "127.0.0.1",
     "port" : 4444,
@@ -33,7 +33,7 @@
         "acceptSslCerts": true
       }
     },
-    "french" : {
+    "firefox" : {
       "launch_url" : "http://google.fr",
       "desiredCapabilities": {
         "browserName": "firefox",
