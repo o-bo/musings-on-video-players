@@ -3,16 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "1.0.13"
+    "babel-eslint": "^7.2.3",
+    "chromedriver": "^2.32.2",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "nightwatch": "^0.9.16",
+    "react-scripts": "1.0.13",
+    "selenium-server-standalone-jar": "^3.5.3"
   },
   "dependencies": {
+    "enzyme": "^2.9.1",
+    "jest-enzyme": "^3.8.2",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "nw-start": "node_modules/nightwatch/bin/nightwatch -c nightwatch.conf.json",
+    "nw-start-french": "node_modules/nightwatch/bin/nightwatch -c nightwatch.conf.json --env french"
   }
 }

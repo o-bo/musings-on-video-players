@@ -1,0 +1,98 @@
+11:31:06.092 INFO - Selenium build info: version: '3.5.3', revision: 'a88d25fe6b'
+11:31:06.093 INFO - Launching a standalone Selenium Server
+2017-09-10 11:31:06.124:INFO::main: Logging initialized @434ms to org.seleniumhq.jetty9.util.log.StdErrLog
+11:31:06.205 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+11:31:06.254 INFO - Driver provider class org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+11:31:06.254 INFO - Driver provider class org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+11:31:06.302 INFO - Using the passthrough mode handler
+2017-09-10 11:31:06.350:INFO:osjs.Server:main: jetty-9.4.5.v20170502
+2017-09-10 11:31:06.395:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@4e9ba398{/,null,STARTING} has uncovered http methods for path: /
+2017-09-10 11:31:06.402:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@4e9ba398{/,null,AVAILABLE}
+2017-09-10 11:31:06.446:INFO:osjs.AbstractConnector:main: Started ServerConnector@3a883ce7{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-09-10 11:31:06.447:INFO:osjs.Server:main: Started @756ms
+11:31:06.447 INFO - Selenium Server is up and running
+2017-09-10 11:31:07.041:INFO:osjshC.ROOT:qtp1586600255-11: org.openqa.selenium.remote.server.WebDriverServlet-6767c1fc: Initialising WebDriverServlet
+11:31:07.124 INFO - Binding default provider to: org.openqa.selenium.chrome.ChromeDriverService
+11:31:07.125 INFO - Found handler: org.openqa.selenium.remote.server.BeginSession@3eff4964
+11:31:07.126 INFO - Binding default provider to: org.openqa.selenium.chrome.ChromeDriverService
+11:31:07.126 INFO - Found handler: org.openqa.selenium.remote.server.BeginSession@bc9893f
+11:31:07.132 INFO - /session: Executing POST on /session (handler: BeginSession)
+11:31:07.133 INFO - /session: Executing POST on /session (handler: BeginSession)
+11:31:07.259 INFO - Capabilities are: Capabilities {acceptSslCerts=true, name=Display Player With Play Pa..., browserName=chrome, javascriptEnabled=true, platformName=ANY, platform=ANY, }
+11:31:07.259 INFO - Capabilities are: Capabilities {acceptSslCerts=true, name=Research On Google Test, browserName=chrome, javascriptEnabled=true, platformName=ANY, platform=ANY, }
+11:31:07.261 INFO - Capabilities {acceptSslCerts=true, name=Research On Google Test, browserName=chrome, javascriptEnabled=true, platformName=ANY, platform=ANY, } matched class org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+11:31:07.261 INFO - Capabilities {acceptSslCerts=true, name=Display Player With Play Pa..., browserName=chrome, javascriptEnabled=true, platformName=ANY, platform=ANY, } matched class org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+11:31:07.262 INFO - Capabilities {acceptSslCerts=true, name=Research On Google Test, browserName=chrome, javascriptEnabled=true, platformName=ANY, platform=ANY, } matched class org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+11:31:07.264 INFO - Capabilities {acceptSslCerts=true, name=Display Player With Play Pa..., browserName=chrome, javascriptEnabled=true, platformName=ANY, platform=ANY, } matched class org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061) on port 42428
+Only local connections are allowed.
+Starting ChromeDriver 2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061) on port 22235
+Only local connections are allowed.
+11:31:09.328 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:09.329 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing POST on /session/c6615a9d5e249a5a85cea9885aa5f907/url (handler: ServicedSession)
+11:31:09.334 INFO - To upstream: {"url":"http://google.fr"}
+11:31:09.779 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@505af4d8
+11:31:09.779 INFO - Handler thread for session 33da03b9531b5b5129be7333de2e9b72 (chrome): Executing POST on /session/33da03b9531b5b5129be7333de2e9b72/url (handler: ServicedSession)
+11:31:09.780 INFO - To upstream: {"url":"http://localhost:3000"}
+11:31:11.339 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":null}
+11:31:11.350 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:11.351 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing POST on /session/c6615a9d5e249a5a85cea9885aa5f907/elements (handler: ServicedSession)
+11:31:11.356 INFO - To upstream: {"using":"css selector","value":"body"}
+11:31:11.414 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":[{"ELEMENT":"0.3128268604587272-1"}]}
+11:31:11.419 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:11.420 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing GET on /session/c6615a9d5e249a5a85cea9885aa5f907/element/0.3128268604587272-1/displayed (handler: ServicedSession)
+11:31:11.434 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":true}
+11:31:11.445 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:11.445 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing POST on /session/c6615a9d5e249a5a85cea9885aa5f907/element (handler: ServicedSession)
+11:31:11.447 INFO - To upstream: {"using":"css selector","value":"input[type=text]"}
+11:31:11.484 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":{"ELEMENT":"0.3128268604587272-2"}}
+11:31:11.488 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:11.489 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing POST on /session/c6615a9d5e249a5a85cea9885aa5f907/element/0.3128268604587272-2/value (handler: ServicedSession)
+11:31:11.490 INFO - To upstream: {"value":["l","a"," ","c","l","a","s","s","e"," ","a","m","\u00e9","r","i","c","a","i","n","e"]}
+11:31:11.816 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":null}
+11:31:11.830 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:11.830 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing POST on /session/c6615a9d5e249a5a85cea9885aa5f907/elements (handler: ServicedSession)
+11:31:11.833 INFO - To upstream: {"using":"css selector","value":"input[name=btnK]"}
+11:31:11.852 INFO - To downstream: {"sessionId":"33da03b9531b5b5129be7333de2e9b72","status":0,"value":null}
+11:31:11.865 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@505af4d8
+11:31:11.865 INFO - Handler thread for session 33da03b9531b5b5129be7333de2e9b72 (chrome): Executing POST on /session/33da03b9531b5b5129be7333de2e9b72/elements (handler: ServicedSession)
+11:31:11.867 INFO - To upstream: {"using":"css selector","value":"body"}
+11:31:11.889 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":[{"ELEMENT":"0.3128268604587272-3"}]}
+11:31:11.892 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:11.892 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing GET on /session/c6615a9d5e249a5a85cea9885aa5f907/element/0.3128268604587272-3/displayed (handler: ServicedSession)
+11:31:11.896 INFO - To downstream: {"sessionId":"33da03b9531b5b5129be7333de2e9b72","status":0,"value":[{"ELEMENT":"0.33969016180879574-1"}]}
+11:31:11.900 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@505af4d8
+11:31:11.900 INFO - Handler thread for session 33da03b9531b5b5129be7333de2e9b72 (chrome): Executing GET on /session/33da03b9531b5b5129be7333de2e9b72/element/0.33969016180879574-1/displayed (handler: ServicedSession)
+11:31:11.921 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":true}
+11:31:11.926 INFO - To downstream: {"sessionId":"33da03b9531b5b5129be7333de2e9b72","status":0,"value":true}
+11:31:11.929 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:11.929 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing POST on /session/c6615a9d5e249a5a85cea9885aa5f907/element (handler: ServicedSession)
+11:31:11.931 INFO - To upstream: {"using":"css selector","value":"input[name=btnK]"}
+11:31:11.932 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@505af4d8
+11:31:11.932 INFO - Handler thread for session 33da03b9531b5b5129be7333de2e9b72 (chrome): Executing POST on /session/33da03b9531b5b5129be7333de2e9b72/elements (handler: ServicedSession)
+11:31:11.934 INFO - To upstream: {"using":"css selector","value":".play-pause-btn"}
+11:31:11.954 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":{"ELEMENT":"0.3128268604587272-3"}}
+11:31:11.958 INFO - To downstream: {"sessionId":"33da03b9531b5b5129be7333de2e9b72","status":0,"value":[{"ELEMENT":"0.33969016180879574-2"}]}
+11:31:11.958 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:11.958 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing POST on /session/c6615a9d5e249a5a85cea9885aa5f907/element/0.3128268604587272-3/click (handler: ServicedSession)
+11:31:11.960 INFO - To upstream: 
+11:31:11.963 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@505af4d8
+11:31:11.966 INFO - Handler thread for session 33da03b9531b5b5129be7333de2e9b72 (chrome): Executing DELETE on /session/33da03b9531b5b5129be7333de2e9b72 (handler: ServicedSession)
+11:31:12.021 INFO - To downstream: {"sessionId":"33da03b9531b5b5129be7333de2e9b72","status":0,"value":null}
+11:31:12.025 INFO - Removing session org.openqa.selenium.remote.server.ServicedSession@505af4d8
+11:31:12.029 INFO - To downstream: {"sessionId":"","status":0,"value":null}
+11:31:13.950 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":null}
+11:31:14.962 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:14.962 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing POST on /session/c6615a9d5e249a5a85cea9885aa5f907/element (handler: ServicedSession)
+11:31:14.964 INFO - To upstream: {"using":"css selector","value":"#main"}
+11:31:14.984 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":{"ELEMENT":"0.12735896506250777-1"}}
+11:31:14.987 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:14.988 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing GET on /session/c6615a9d5e249a5a85cea9885aa5f907/element/0.12735896506250777-1/text (handler: ServicedSession)
+11:31:15.334 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":"TousVidéosImagesActualitésShoppingPlus\nParamètres\nOutils\nEnviron 432 000 résultats (0,42 secondes) \n\n\nRappel concernant les règles de confidentialité de Google\nME LE RAPPELER PLUS TARD\nLIRE\nLa Classe américaine\ncyclim.se/\nCe site surpuissant recueille tout ce que vous avez toujours voulu savoir sur le magnifique flim La Classe américaine (voir sa page imdb) , les détournements ...\nLa Classe américaine — Wikipédia\nhttps://fr.wikipedia.org/wiki/La_Classe_américaine\nJohn Wayne · Dustin Hoffman · Robert Redford · Paul Newman. Sociétés de production, Warner Bros. Canal+. Genre, Film policier, Comédie, Détournement d' ...\nSynopsis · Distribution · Analyse · Les autres détournements\nLe Grand Détournement; La Classe Américaine (Complet) - YouTube\n▶ 1:12:02\nhttps://www.youtube.com/watch?v=l44WKAtZLjI\n31 janv. 2013 - Ajouté par pixeljessie1989\nLa Classe américaine ou Le Grand Détournement est un film français, écrit et réalisé par Michel Hazanavicius et ...\nLa Classe américaine - film 1993 - AlloCiné\nwww.allocine.fr › Cinéma › Films à l'affiche\nNote : 4,1 - 3 184 votes\nLa Classe américaine est un film réalisé par Michel Hazanavicius et Dominique Mezerette avec Spencer Tracy, Paul Newman. Synopsis : Des extraits des films ...\n\"La Classe américaine\" : histoire d'un film culte - 18 décembre 2016 -\nteleobs.nouvelobs.com › Téléobs › Actualités\n22 nov. 2016 - Projeté à Paris le 24 novembre dans le cadre du premier festival TCM, \"la Classe américaine\" - détournement d'une cinquantaine de films ...\nLa Classe américaine - Wikiquote, le recueil de citations libres\nhttps://fr.wikiquote.org/wiki/La_Classe_américaine\nLa Classe américaine ou Le Grand Détournement est un téléfilm de 1993, écrit et réalisé par Michel Hazanavicius et Dominique Mézerette.\nLa Classe américaine: histoire d'un film pirate devenu culte - L'Express\nwww.lexpress.fr/.../la-classe-americaine-histoire-d-un-film-pirate-devenu-culte_75297...\n9 avr. 2009 - La Classe américaine, c'est l'histoire d'un film diffusé deux fois en 15 ans qui a engendré des dizaines de sites de fans, des milliers de ...\nLa Classe Américaine, le grand détournement - Téléfilm (1993)\nhttps://www.senscritique.com/film/La_Classe_Americaine_le_grand.../365314\nNote : 7,7/10 - 17 667 votes\nLa Classe Américaine, le grand détournement est un téléfilm de Michel Hazanavicius et Dominique Mezerette. Synopsis : Le film est exclusivement compos ...\nLa Classe américaine Section Culte Festival TCM Cinéma\nfestival.tcmcinema.fr/la-classe-americaine/\nLa classe américaine (1993) Jeudi 24 novembre à 20.00 – 70 mn VF Un flim réalisé par Michel Hazanavicius et Dominique Mezerette Avec John Wayne, Robert ...\nHommage à Dominique Mézerette, co-réalisateur de \"La Classe ...\nwww.parismatch.com/.../Hommage-a-Dominique-Mezerette-realisateur-de-La-Classe-...\n14 juil. 2016 - C'était la trilogie du \"Grand Détournement\": \"Derrick contre Superman\", \"Ça détourne\" et \"La Classe américaine\", longtemps introuvable pour ...\nEn réponse à une demande légale adressée à Google, nous avons supprimé 1 résultat(s) de cette page. Si vous souhaitez en savoir plus sur cette demande, vous pouvez consulter le site LumenDatabase.org.\nRecherches associées à la classe américaine\nla classe américaine streaming\nla classe américaine hd\nla classe américaine citations\nla classe américaine dvd\nla classe américaine acteurs\nla classe américaine distribution\nla classe américaine télécharger\nla classe américaine chips\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nSuivant\nPlus d'images\nLa Classe américaine\n1993 ‧ Comédie ‧ 1h 10m\n4,1/5\nAlloCiné\n7,7/10\nSens Critique\nLa Classe américaine : Le Grand Détournement est un téléfilm français, écrit et réalisé par Michel Hazanavicius et Dominique Mézerette, diffusé en décembre 1993 sur Canal+. Le film est un mashup. Wikipédia\nPremière sortie : 2003 (États-Unis)\nRéalisateurs : Michel Hazanavicius, Dominique Mézerette\nLangue : Français\nScénario : Michel Hazanavicius, Dominique Mézerette\nMontage : Jean-Michel Kuess, Guy Rondi\nDistribution\nVoir + de 20 éléments\nJohn Wayne\nGeorge Abitbol\nRobert Redford\nSteven\nPaul Newman\nDave\nRecherches associées\nVoir + de 10 éléments\nÇa détourne\n1992\nOSS 117 : Rio ne répond pl...\n2009\nThe Artist\n2011\nCommentaires\nDomezain-Berraute - Selon votre adresse Internet - Utiliser la position exacte - En savoir plus\nAide Envoyer des commentaires Confidentialité Conditions"}
+11:31:15.341 INFO - Found handler: org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:15.341 INFO - Handler thread for session c6615a9d5e249a5a85cea9885aa5f907 (chrome): Executing DELETE on /session/c6615a9d5e249a5a85cea9885aa5f907 (handler: ServicedSession)
+11:31:15.394 INFO - To downstream: {"sessionId":"c6615a9d5e249a5a85cea9885aa5f907","status":0,"value":null}
+11:31:15.395 INFO - Removing session org.openqa.selenium.remote.server.ServicedSession@2803d6f
+11:31:15.405 INFO - To downstream: {"sessionId":"","status":0,"value":null}

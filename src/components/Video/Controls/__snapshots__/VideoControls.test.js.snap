@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoControlsTest renders correctly in pause 1`] = `
+<div
+  className="video-controls"
+>
+  <svg
+    className="play-pause-btn"
+    fill="white"
+    height={23}
+    onClick={[Function]}
+    style={
+      Object {
+        "padding": 5,
+      }
+    }
+    width={23}
+  >
+    <path
+      d="M8.016 5.016l10.969 6.984-10.969 6.984v-13.969z"
+    />
+  </svg>
+  <span
+    className="video-time"
+  >
+    00:18
+  </span>
+  <progress
+    max={60}
+    onClick={[Function]}
+    value={18}
+  />
+  <span
+    className="video-time"
+  >
+    01:00
+  </span>
+</div>
+`;
+
+exports[`VideoControlsTest renders correctly in play 1`] = `
+<div
+  className="video-controls"
+>
+  <svg
+    className="play-pause-btn"
+    fill="white"
+    height={23}
+    onClick={[Function]}
+    style={
+      Object {
+        "padding": 5,
+      }
+    }
+    width={23}
+  >
+    <path
+      d="M14.016 5.016h3.984v13.969h-3.984v-13.969zM6 18.984v-13.969h3.984v13.969h-3.984z"
+    />
+  </svg>
+  <span
+    className="video-time"
+  >
+    00:18
+  </span>
+  <progress
+    max={60}
+    onClick={[Function]}
+    value={18}
+  />
+  <span
+    className="video-time"
+  >
+    01:00
+  </span>
+</div>
+`;
